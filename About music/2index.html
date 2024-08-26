@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О музыке</title>
+</head>
+<body>
+    <header>
+        <h1>Мой сайт</h1>
+    </header>
+    <p>Привет! С вами Лена и это мой второй сайт.</p>  
+    <p>Он посвящен упущенной возможности.<br> Знаете, мне так и не удалось попасть на живой концерт Depech Mode, хотя в Питере они выступали не раз.</p>
+       
+    <h2>Мое видео</h2>
+    <p>Посмотрите на этих парней!</p>
+    <video src="/About_me/depeche-mode-goodbye_270201.mp4" width="600" height="300" controls>
+      Браузер не смог вопроизвести видео
+    </video>    
+
+    <h2>Моя музыка</h2>
+    <p>А послушайте это:</p>
+    <audio src="/About_me/Depeche Mode – Personal Jesus.mp3" controls>
+      Браузер не смог вопроизвести аудио
+    </audio>    
+
+    <h2>Интерактивный объект</h2>
+    <p>Если захотелось послушать их вживую, ловите Афишу!</p>
+    <embed src="/About_me/tour2024.pdf" width="600" height="300" type="application/pdf">
+
+    <h2>Форма сбора данных</h2>
+    <p>Расскажите мне о себе, заполнив эту простую форму:</p> 
+    <form action="/submit" method="post">
+        <label for="username">Имя пользователя</label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="emai">Почта</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="city">Выберите Ваш город</label><br>
+        <select id="city" name="city">
+            <option value="spb">Питер</option>
+            <option value="moscow">Москва</option>
+            <option value="kazan">Казань</option>
+        </select><br><br>
+
+        <label>А Вам нравится Depech Mode?</label><br>
+        <input type="checkbox" id="like1" name="like" value="fan">
+        <label for="like1">Фанатею</label><br>
+        <input type="checkbox" id="like2" name="like" value="like">
+        <label for="like2">Могу послушать</label><br>
+        <input type="checkbox" id="like3" name="like" value="dislike">
+        <label for="like3">Не мое</label><br><br>
+
+        <input type="submit" value="Отправить">
+    </form>
+
+</body>
+</html>
